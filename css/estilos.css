@@ -1,0 +1,573 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Syne Mono", monospace;
+}
+
+/*################## MOBILE #####################*/
+/*========== Estilos Generales =============*/
+/*========= Header =======*/
+@media (max-width: 479px) {
+  header {
+    background-image: url("../imagenes/EROS-mobile.png");
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+  }
+  .header-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  label {
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-right: 1px solid #fff;
+  }
+  #btn-menu {
+    display: none;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+
+  .menu {
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .menu li {
+    border-top: solid 1px #fff;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+  }
+  li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-right: #fff 1px solid;
+  }
+  li:hover {
+    background-color: #4682b4;
+  }
+  i:hover {
+    background-color: #ff00f7;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  /*buscador*/
+  .buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 80%;
+    top: 2.5%;
+
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #ff00f7;
+    border: solid 1px #fff;
+  }
+  .buscar-texto {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    float: left;
+    line-height: 50px;
+    transition: 0.3s;
+    width: 0;
+  }
+  .boton {
+    width: 40px;
+    height: 40px;
+  }
+  .buscar:hover > .buscar-texto {
+    width: 130px;
+  }
+}
+/* ===== SLIDER ==== */
+@media (max-width: 479px) {
+  body {
+    background-color: #fbbdbc;
+  }
+  .main-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .slide {
+    margin-top: 10px;
+    height: auto;
+    width: 50vh;
+    border: solid 2px #fff;
+  }
+  .slide img {
+    height: 25vh;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+/*==========  main =======*/
+@media (max-width: 479px) {
+  h1 {
+    text-align: center;
+  }
+  .section-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  .imagenes {
+    width: 253px;
+    background-color: #fff;
+    margin: 10px;
+  }
+  .section__imagenes {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 300ms;
+  }
+  .texto-precio {
+    text-align: center;
+    border: solid gray 1px;
+  }
+  .texto-precio:hover {
+    color: #ff00f7;
+  }
+  .imagenes:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    border: solid 4px #ff00f7;
+  }
+}
+
+/*#########TABLET############*/
+@media (min-width: 480px) and (max-width: 1023px) {
+  header {
+    background-image: url("../imagenes/EROS-mobile.png");
+    background-position: center;
+    background-size: 69.5%;
+    height: 20vh;
+  }
+  .header-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  label {
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border-right: 1px solid #fff;
+  }
+  #btn-menu {
+    display: none;
+  }
+  label:hover {
+    cursor: pointer;
+    background-color: #ff00f7;
+    border-radius: 20%;
+  }
+
+  .menu {
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .menu li {
+    border-top: solid 1px #fff;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+  }
+  li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-right: #fff 1px solid;
+  }
+
+  li:hover {
+    background-color: #4682b4;
+  }
+  i:hover {
+    background-color: #ff00f7;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  /*buscador*/
+  .buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 80%;
+    top: 2.5%;
+
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #ff00f7;
+    border: solid 1px #fff;
+  }
+  .buscar-texto {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    float: left;
+    line-height: 50px;
+    transition: 0.3s;
+    width: 0;
+  }
+  .boton {
+    width: 40px;
+    height: 40px;
+  }
+  .buscar:hover > .buscar-texto {
+    width: 130px;
+  }
+}
+/* ===== SLIDER ==== */
+@media (min-width: 480px) and (max-width: 1023px) {
+  body {
+    background-color: #fbbdbc;
+  }
+  .main-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .slide {
+    margin-top: 10px;
+    height: auto;
+    width: 72vh;
+    border: solid 2px #fff;
+  }
+  .slide img {
+    height: 40vh;
+    width: auto;
+    object-fit: cover;
+  }
+}
+/*==========  main =======*/
+@media (min-width: 480px) and (max-width: 1023px) {
+  h1 {
+    text-align: center;
+  }
+  .section-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  .imagenes {
+    width: 300px;
+    background-color: #fff;
+    border: solid black 1px;
+    margin: 10px;
+  }
+  .section__imagenes {
+    width: 300px;
+    object-fit: cover;
+    transition: all 300ms;
+  }
+  .texto-precio {
+    text-align: center;
+    border: solid gray 1px;
+  }
+  .texto-precio:hover {
+    color: #ff00f7;
+  }
+
+  .imagenes:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    border: solid 4px #ff00f7;
+  }
+}
+/*##########DESKTOP#########*/
+
+@media (min-width: 1024px) {
+  header {
+    background-image: url("../imagenes/EROS-mobile.png");
+    background-position: center;
+
+    background-size: 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 30vh;
+  }
+  h1 {
+    font-family: "Syne Mono";
+    text-align: center;
+  }
+  #btn-menu {
+    display: none;
+  }
+  .header-contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 50px;
+  }
+  label {
+    display: none;
+  }
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-right: #fff 1px solid;
+  }
+  li {
+    flex-grow: 1;
+  }
+  li:hover {
+    background-color: blue;
+  }
+  li,
+  a:hover {
+    color: #ff00f7;
+  }
+
+  .menu {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  .header-conteiner__menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    height: 100%;
+  }
+  i:hover {
+    background-color: #ff00f7;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  main {
+    background-color: #fbbdbc;
+    height: 265vh;
+  }
+  .main {
+    height: 194vh;
+  }
+  /*buscador*/
+  .buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 92%;
+    top: 3%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    padding: 4px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #ff00f7;
+    border: solid 1px #fff;
+  }
+  .buscar-texto {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 22px;
+    float: left;
+    line-height: 50px;
+    transition: 0.3s;
+    width: 0;
+    color: #fff;
+  }
+  .boton {
+    width: 40px;
+    height: 40px;
+  }
+  .buscar:hover > .buscar-texto {
+    width: 200px;
+  }
+}
+
+/*===== SLIDER ====*/
+@media (min-width: 1024px) {
+  .main-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .slide {
+    margin-top: 10px;
+    height: auto;
+    width: 160vh;
+    border: solid 2px #fff;
+  }
+  .slide img {
+    height: 70vh;
+    width: auto;
+    object-fit: cover;
+  }
+}
+/*==========  main =======*/
+@media (min-width: 1024px) {
+  .section-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+  .imagenes {
+    width: 335px;
+    background-color: #fff;
+    margin: 10px;
+    transition: all 300ms;
+    border: solid black 1px;
+  }
+  .section__imagenes {
+    object-fit: cover;
+  }
+  .texto-precio {
+    text-align: center;
+    border: solid gray 1px;
+  }
+
+  .texto-precio:hover {
+    color: #ff00f7;
+  }
+
+  .imagenes:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    border: solid 4px #ff00f7;
+  }
+}
+
+/*FOOTER*/
+footer {
+  /*visuales*/
+  background-color: #ffc7ef;
+  border: solid #c4c2bc 6px;
+}
+@media (max-width: 479px) {
+  footer .icono-footer {
+    width: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .icono-footer {
+    width: 35px;
+  }
+}
+@media (max-width: 479px) {
+  footer .footer__p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1023px) {
+  footer .footer__p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer__p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 479px) {
+  footer h5 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1023px) {
+  footer h5 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  footer h5 {
+    font-size: 14px;
+  }
+}
+
+.div_principal {
+  display: flex;
+  justify-content: space-between;
+}
+.div_principal .div__ubicacion {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: e;
+}
+.div_principal .div__redes {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.div_principal .div__contactos {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contenedor-wsp {
+  justify-content: center;
+  align-self: center;
+}
+
+.icono-footer:hover {
+  background-color: #00a0e3;
+  border-radius: 20%;
+}
